@@ -73,6 +73,7 @@ llm = LlamaCpp(
 )
 
 llm_chain = prompt | llm
-question = "What are the weaknesses of the Tornvagn?"
+# question = "What are the weaknesses of the Tornvagn?"
+question = input()
 llm_chain.invoke({"question": question})
 
